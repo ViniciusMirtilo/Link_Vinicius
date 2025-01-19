@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirtilo - Links</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <div class="profile">
+            <img src="./Picture/Gif+dalmata.gif" alt="Mirtilo" class="profile-image">
+            <h1>Mirtilo</h1>
+        </div>
+        
+        <div class="buttons-container">
+            <div class="button-group main-buttons">
+                <button class="link-button" data-target="social">
+                    <span>Social Media</span>
+                    <span>→</span>
+                </button>
+                <button class="link-button" data-target="gaming">
+                    <span>Gaming</span>
+                    <span>→</span>
+                </button>
+                <button class="link-button" data-target="projects">
+                    <span>Projects</span>
+                    <span>→</span>
+                </button>
+            </div>
+
+            <div class="button-group social-buttons hidden">
+                <button class="link-button" onclick="window.open('https://t.me/mirtilo', '_blank')">
+                    <span>Telegram</span>
+                    <span>→</span>
+                </button>
+                <button class="link-button" onclick="window.open('https://twitter.com/mirtilo', '_blank')">
+                    <span>X / Twitter</span>
+                    <span>→</span>
+                </button>
+                <button class="back-button">Back</button>
+            </div>
+
+            <div class="button-group gaming-buttons hidden">
+                <button class="link-button" onclick="window.open('https://steamcommunity.com/id/mirtilo', '_blank')">
+                    <span>Steam</span>
+                    <span>→</span>
+                </button>
+                <button class="link-button" onclick="window.open('https://bluesky.com/mirtilo', '_blank')">
+                    <span>Bluesky</span>
+                    <span>→</span>
+                </button>
+                <button class="back-button">Back</button>
+            </div>
+
+            <div class="button-group projects-buttons hidden">
+                <button class="link-button">
+                    <span>Coming Soon</span>
+                    <span>→</span>
+                </button>
+                <button class="back-button">Back</button>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Made by <a href="https://github.com/ViniciusMirtilo">@Mirtilo</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
