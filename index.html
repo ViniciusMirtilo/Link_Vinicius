@@ -12,54 +12,65 @@
 <body>
     <div class="background-animation"></div>
     <div class="container">
-        <div class="profile">
-            <img src="./Picture/Gif+dalmata.gif" alt="Mirtilo" class="profile-image">
-            <h1>Mirtilo</h1>
+        <div id="balloon-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9c0 4 3.5 8 6 8s6-4 6-8a6 6 0 0 0-12 0"/>
+                <line x1="12" y1="17" x2="12" y2="22"/>
+            </svg>
         </div>
-        
+
+            <!--Profile-->
+
+        <div class="profile">
+            <img src="./image/profile.png" alt="Mirtilo" class="profile-image">
+            <h1>Vinicius Lima</h1>
+        </div>
+
+            <!--Buttons Home-->
         <div class="buttons-container">
             <div class="button-group main-buttons">
-                <button class="link-button" data-target="social">
-                    <span>Social Media</span>
+<!--                <button class="link-button" data-target="social">-->
+<!--                    <span>Redes Sociais</span>-->
+<!--                    <span>→</span>-->
+<!--                </button>-->
+
+                <button class="link-button" onclick="window.open('https://github.com/ViniciusMirtilo', '_blank')">
+                    <span>Github</span>
                     <span>→</span>
                 </button>
-                <button class="link-button" data-target="gaming">
-                    <span>Gaming</span>
+
+                <button class="link-button" onclick="window.open('https://www.linkedin.com/in/vinicius-lima-dos-santos-428333190/', '_blank')">
+                    <span>Linkedin</span>
                     <span>→</span>
                 </button>
+
                 <button class="link-button" data-target="projects">
-                    <span>Projects</span>
+                    <span>Principais Projetos</span>
                     <span>→</span>
                 </button>
             </div>
 
+            <!--Social Media-->
             <div class="button-group social-buttons hidden">
-                <button class="link-button" onclick="window.open('https://t.me/mirtilo', '_blank')">
-                    <span>Telegram</span>
-                    <span>→</span>
-                </button>
-                <button class="link-button" onclick="window.open('https://twitter.com/mirtilo', '_blank')">
-                    <span>X / Twitter</span>
-                    <span>→</span>
-                </button>
                 <button class="back-button">Back</button>
             </div>
 
-            <div class="button-group gaming-buttons hidden">
-                <button class="link-button" onclick="window.open('https://steamcommunity.com/id/mirtilo', '_blank')">
-                    <span>Steam</span>
-                    <span>→</span>
-                </button>
-                <button class="link-button" onclick="window.open('https://bluesky.com/mirtilo', '_blank')">
-                    <span>Bluesky</span>
-                    <span>→</span>
-                </button>
-                <button class="back-button">Back</button>
-            </div>
-
+            <!--Projects-->
             <div class="button-group projects-buttons hidden">
-                <button class="link-button">
-                    <span>Coming Soon</span>
+                <button class="link-button" onclick="window.open('https://github.com/ViniciusMirtilo/Curriculo_HTML5', '_blank')">
+                    <span>Curriculo HTML5</span>
+                    <span>→</span>
+                </button>
+                <button class="link-button" onclick="window.open('https://github.com/ViniciusMirtilo/Project_MySQL', '_blank')">
+                    <span>Project MySQL</span>
+                    <span>→</span>
+                </button>
+                <button class="link-button" onclick="window.open('https://github.com/ViniciusMirtilo/Projeto_Calculadora_C', '_blank')">
+                    <span>Calculadora C#</span>
+                    <span>→</span>
+                </button>
+                <button class="link-button" onclick="window.open('https://github.com/ViniciusMirtilo/Market_Squeak', '_blank')">
+                    <span>Market Squeak PHP</span>
                     <span>→</span>
                 </button>
                 <button class="back-button">Back</button>

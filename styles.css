@@ -3,8 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-@font-face {
+    @font-face {
     font-family: 'Fredoka';
     src: url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap');
 }
@@ -59,7 +58,7 @@ body {
     height: 150px;
     border-radius: 20px;
     margin-bottom: 1rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(67, 162, 201, 1);
 }
 
 h1 {
@@ -74,6 +73,10 @@ h1 {
 .buttons-container {
     position: relative;
     min-height: 300px;
+}
+
+.volta a {
+    border: 100px solid red;
 }
 
 .button-group {
@@ -140,13 +143,13 @@ a{
 }
 
 a:hover{
-    color: #6267d1;
+    color: #5CD6FF;
     transition: all 0.3s ease;
 }
 
 footer {
     margin-top: 2rem;
-    color: #136f8e;
+    color: #000000;
     font-size: 0.9rem;
     font-family: 'Fredoka', sans-serif;
 }
@@ -165,5 +168,89 @@ footer {
     
     h1 {
         font-size: 2rem;
+    }
+}
+
+/*Baloes*/
+
+#balloon-button {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    background-color: #007A9E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#balloon-button:hover {
+    background-color: #002937;
+    transform: scale(1.1);
+}
+
+#balloon-button:active {
+    transform: scale(0.95);
+}
+
+#balloon-button svg {
+    color: white;
+}
+
+.floating-balloon {
+    position: fixed;
+    pointer-events: none;
+    will-change: transform;
+    left: var(--start-x);
+    top: var(--start-y);
+    animation: float var(--float-duration, 8s) ease-in-out forwards,
+    sway var(--sway-duration, 4s) ease-in-out infinite alternate;
+}
+
+.floating-balloon svg {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    transform-origin: center bottom;
+}
+
+.profile-image {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) scale(0);
+        opacity: 0;
+    }
+    10% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    90% {
+        transform: translate(calc(var(--end-x) - var(--start-x)), calc(var(--end-y) - var(--start-y))) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(calc(var(--end-x) - var(--start-x)), calc(var(--end-y) - var(--start-y))) scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes sway {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: var(--sway-distance, 30px);
     }
 }
