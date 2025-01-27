@@ -9,15 +9,6 @@ Este é um projeto de página pessoal interativa que reúne seus principais link
 - **Animações Suaves**: Experiência visual aprimorada com animações minimalistas.
 - **Navegação Clara**: Botões organizados por categorias, como "Redes Sociais" e "Projetos".
 
-### Estrutura do Projeto
-
-O projeto é organizado da seguinte forma:
-
-- `index.html`: Estrutura principal da página.
-- `styles.css`: Arquivo responsável pelos estilos visuais e animações.
-- `script.js`: Gerencia a interação e a lógica da navegação.
-- `image/`: Contém a imagem de perfil usada na página.
-
 ### Como Utilizar
 
 Para rodar o projeto localmente:
@@ -46,9 +37,9 @@ Para rodar o projeto localmente:
 
 ### Recursos Utilizados
 
-- **HTML5**: Estrutura da página.
-- **CSS3**: Design responsivo e animações.
-- **JavaScript**: Funcionalidades interativas.
-- **Google Fonts**: Fonte personalizada (*Fredoka*).
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Google Fonts**
 
 Sinta-se à vontade para contribuir, reportar problemas ou sugerir melhorias! 😊
