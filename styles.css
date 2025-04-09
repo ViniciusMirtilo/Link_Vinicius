@@ -121,7 +121,7 @@ h1 {
 }
 
 .back-button {
-    background: rgba(113, 239, 235);
+    background: #0095C0;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -133,8 +133,8 @@ h1 {
 }
 
 .back-button:hover {
-    background: rgba(255, 255, 255);
-    color: #5CD6FF;
+    background: #007A9E;
+    color: white;
 }
 
 a{
@@ -143,7 +143,7 @@ a{
 }
 
 a:hover{
-    color: #5CD6FF;
+    color: white;
     transition: all 0.3s ease;
 }
 
