@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
         profileImage.addEventListener('click', () => {
             isAlternateImage = !isAlternateImage;
             profileImage.src = isAlternateImage
-                ? 'https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?q=80&w=150&h=150&fit=crop' // Alternate image
-                : './image/profile.png'; // Original image
+                ? './image/profile.png' // Alternate image
+                : './image/profile01.jpg'; // Original image
 
             // Add transition effect
             profileImage.style.transform = 'scale(0.95)';
